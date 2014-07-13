@@ -21,6 +21,9 @@
 		E2C1EBBE1971EB8600E131C2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2C1EBA01971EB8600E131C2 /* UIKit.framework */; };
 		E2C1EBC61971EB8600E131C2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E2C1EBC41971EB8600E131C2 /* InfoPlist.strings */; };
 		E2C1EBC81971EB8600E131C2 /* RockPaperScissorsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C1EBC71971EB8600E131C2 /* RockPaperScissorsTests.m */; };
+		E2C1EBD31971F13B00E131C2 /* RPSGame.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C1EBD21971F13B00E131C2 /* RPSGame.m */; };
+		E2C1EBD71971F17400E131C2 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C1EBD61971F17400E131C2 /* Player.m */; };
+		E2C1EBDA1971F22400E131C2 /* Hand.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C1EBD91971F22400E131C2 /* Hand.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,12 @@
 		E2C1EBC31971EB8600E131C2 /* RockPaperScissorsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RockPaperScissorsTests-Info.plist"; sourceTree = "<group>"; };
 		E2C1EBC51971EB8600E131C2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E2C1EBC71971EB8600E131C2 /* RockPaperScissorsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RockPaperScissorsTests.m; sourceTree = "<group>"; };
+		E2C1EBD11971F13B00E131C2 /* RPSGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RPSGame.h; path = Model/RPSGame.h; sourceTree = "<group>"; };
+		E2C1EBD21971F13B00E131C2 /* RPSGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RPSGame.m; path = Model/RPSGame.m; sourceTree = "<group>"; };
+		E2C1EBD51971F17400E131C2 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Player.h; path = Model/Player.h; sourceTree = "<group>"; };
+		E2C1EBD61971F17400E131C2 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Player.m; path = Model/Player.m; sourceTree = "<group>"; };
+		E2C1EBD81971F22400E131C2 /* Hand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Hand.h; path = Model/Hand.h; sourceTree = "<group>"; };
+		E2C1EBD91971F22400E131C2 /* Hand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Hand.m; path = Model/Hand.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,12 +121,11 @@
 		E2C1EBA21971EB8600E131C2 /* RockPaperScissors */ = {
 			isa = PBXGroup;
 			children = (
-				E2C1EBAB1971EB8600E131C2 /* RPSAppDelegate.h */,
-				E2C1EBAC1971EB8600E131C2 /* RPSAppDelegate.m */,
 				E2C1EBAE1971EB8600E131C2 /* Main.storyboard */,
 				E2C1EBB11971EB8600E131C2 /* RPSViewController.h */,
 				E2C1EBB21971EB8600E131C2 /* RPSViewController.m */,
 				E2C1EBB41971EB8600E131C2 /* Images.xcassets */,
+				E2C1EBD41971F14100E131C2 /* Model */,
 				E2C1EBA31971EB8600E131C2 /* Supporting Files */,
 			);
 			path = RockPaperScissors;
@@ -126,6 +134,8 @@
 		E2C1EBA31971EB8600E131C2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E2C1EBAB1971EB8600E131C2 /* RPSAppDelegate.h */,
+				E2C1EBAC1971EB8600E131C2 /* RPSAppDelegate.m */,
 				E2C1EBA41971EB8600E131C2 /* RockPaperScissors-Info.plist */,
 				E2C1EBA51971EB8600E131C2 /* InfoPlist.strings */,
 				E2C1EBA81971EB8600E131C2 /* main.m */,
@@ -150,6 +160,19 @@
 				E2C1EBC41971EB8600E131C2 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E2C1EBD41971F14100E131C2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E2C1EBD11971F13B00E131C2 /* RPSGame.h */,
+				E2C1EBD21971F13B00E131C2 /* RPSGame.m */,
+				E2C1EBD51971F17400E131C2 /* Player.h */,
+				E2C1EBD61971F17400E131C2 /* Player.m */,
+				E2C1EBD81971F22400E131C2 /* Hand.h */,
+				E2C1EBD91971F22400E131C2 /* Hand.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,9 +273,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2C1EBDA1971F22400E131C2 /* Hand.m in Sources */,
 				E2C1EBAD1971EB8600E131C2 /* RPSAppDelegate.m in Sources */,
 				E2C1EBB31971EB8600E131C2 /* RPSViewController.m in Sources */,
 				E2C1EBA91971EB8600E131C2 /* main.m in Sources */,
+				E2C1EBD31971F13B00E131C2 /* RPSGame.m in Sources */,
+				E2C1EBD71971F17400E131C2 /* Player.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
